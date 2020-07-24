@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const sendgridTransport = require('nodemailer-sendgrid-transport');
 const {validationResult} = require('express-validator/check')
+//
 
 const transporter = nodemailer.createTransport(sendgridTransport({
   auth:{
